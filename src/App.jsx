@@ -20,7 +20,7 @@ function App() {
         >
             <img className="rounded-md w-48" src={me} alt="Adam Eastwood"/>
 
-            <span className="text-5xl font-semibold antialiased font-PlayFairDisplay tracking-wider">
+            <span className="text-4xl xl:text-5xl font-semibold antialiased font-PlayFairDisplay tracking-wider">
                 Adam Eastwood
             </span>
 

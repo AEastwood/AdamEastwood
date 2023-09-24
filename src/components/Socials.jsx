@@ -6,17 +6,37 @@ import LinkedIn from "./Socials/LinkedIn.jsx";
 function Socials() {
 
     return (
-        <div className="flex justify-between w-1/5 px-12">
-            <a href="" title="Instagram">
+        <div className="flex gap-8">
+            <a
+                href="https://instagram.com/aeasywood"
+                title="Instagram"
+                target="_blank"
+                rel="noreferrer"
+            >
                 <Instagram/>
             </a>
-            <a href="" title="Twitter">
+            <a
+                href="https://twitter.com/ADEastwood"
+                title="Twitter"
+                target="_blank"
+                rel="noreferrer"
+            >
                 <Twitter/>
             </a>
-            <a href="" title="GitHub">
+            <a
+                href="https://github.com/AEastwood"
+                title="GitHub"
+                target="_blank"
+                rel="noreferrer"
+            >
                 <Github/>
             </a>
-            <a href="" title="LinkedIn">
+            <a
+                href="https://www.linkedin.com/in/adeastwood/"
+                title="LinkedIn"
+                target="_blank"
+                rel="noreferrer"
+            >
                 <LinkedIn/>
             </a>
         </div>
