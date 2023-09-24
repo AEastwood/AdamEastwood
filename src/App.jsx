@@ -1,4 +1,4 @@
-import me from './assets/imgs/img.png'
+import me from './assets/imgs/img.jpg'
 import Socials from "./components/Socials.jsx";
 import Contact from "./components/Contact.jsx";
 
