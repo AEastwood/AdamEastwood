@@ -1,6 +1,7 @@
 import me from './assets/imgs/img.jpg'
 import Socials from "./components/Socials.jsx";
 import Contact from "./components/Contact.jsx";
+import ProfilePicture from "./components/ProfilePicture.jsx";
 
 function App() {
 
@@ -19,8 +20,7 @@ function App() {
             "
         >
 
-
-            <img className="rounded-md w-48" src={me} alt="Adam Eastwood"/>
+            <ProfilePicture/>
 
             <span className="text-4xl xl:text-5xl font-semibold antialiased font-PlayFairDisplay tracking-wider">
                 Adam Eastwood

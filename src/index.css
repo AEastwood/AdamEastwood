@@ -9,3 +9,12 @@ body{
     background-repeat:repeat;
     background-color: rgba(32, 33, 36, 80%);
 }
+
+.christmas-hat {
+    left: 5px;
+    top: -25px;
+    width: 140px;
+    position: absolute;
+    transform: scaleX(-1) rotate(-40deg);
+    margin: -10px 0px;
+}
