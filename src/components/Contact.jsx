@@ -2,7 +2,7 @@ function Contact() {
     return (
         <div>
             <a
-                className="m-4 text-sm sm:text-base inline-flex text-left items-center space-x-6 bg-gray-800 text-white rounded-lg p-4 px-8 pl-6"
+                className="m-4 text-sm sm:text-base inline-flex text-left items-center space-x-6 bg-gray-800 rounded-lg p-4 px-8 pl-6"
                 href="mailto:adam-3@live.co.uk"
                 title="Email Me"
             >
@@ -12,7 +12,7 @@ function Contact() {
                     </span>
 
                     <span className="flex gap-2">
-                        <span>
+                        <span className="text-white">
                             npm contact
                         </span>
 

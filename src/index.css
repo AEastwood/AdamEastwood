@@ -4,3 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    background-image: url("assets/imgs/christmas.png");
+    background-repeat:repeat;
+    background-color: rgba(32, 33, 36, 80%);
+}

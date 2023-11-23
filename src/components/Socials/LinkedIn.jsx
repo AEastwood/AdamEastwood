@@ -2,7 +2,7 @@ function LinkedIn() {
     return (
         <div>
             <svg
-                className="w-8 h-8 dark:text-gray-200/75 dark:hover:text-gray-200"
+                className="w-8 h-8 text-gray-200/75 hover:text-gray-200"
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
