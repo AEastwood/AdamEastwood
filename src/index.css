@@ -12,9 +12,8 @@ body{
 
 .christmas-hat {
     left: 5px;
-    top: -25px;
+    top: -35px;
     width: 140px;
     position: absolute;
     transform: scaleX(-1) rotate(-40deg);
-    margin: -10px 0px;
 }
