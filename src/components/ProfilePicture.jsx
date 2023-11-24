@@ -6,7 +6,7 @@ function ProfilePicture() {
     return (
         <div className="relative">
             <img className="christmas-hat" src={christmasHat} alt="Christmas Hat"/>
-            <img className="rounded-md w-48" src={me} alt="Adam Eastwood"/>
+            <img className="profile-picture rounded-md w-48" src={me} alt="Adam Eastwood"/>
         </div>
     )
 
