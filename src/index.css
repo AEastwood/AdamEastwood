@@ -11,11 +11,11 @@ body{
 }
 
 .christmas-hat {
-    left: 5px;
-    top: -35px;
-    width: 140px;
+    left: 8px;
+    top: -30px;
+    width: 138px;
     position: absolute;
-    transform: scaleX(-1) rotate(-40deg);
+    transform: scaleX(-1) rotate(-50deg);
     user-drag: none;
     user-select: none;
     -moz-user-select: none;
