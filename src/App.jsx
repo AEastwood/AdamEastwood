@@ -1,4 +1,3 @@
-import me from './assets/imgs/img.jpg'
 import Socials from "./components/Socials.jsx";
 import Contact from "./components/Contact.jsx";
 import ProfilePicture from "./components/ProfilePicture.jsx";
