@@ -1,11 +1,9 @@
-import christmasHat from "../assets/imgs/christmas-hat.png";
-import me from "../assets/imgs/img.jpg";
+import me from "../assets/imgs/me.jpg";
 
 function ProfilePicture() {
 
     return (
         <div className="relative">
-            <img className="christmas-hat" src={christmasHat} alt="Christmas Hat"/>
             <img className="profile-picture rounded-md w-48" src={me} alt="Adam Eastwood"/>
         </div>
     )
