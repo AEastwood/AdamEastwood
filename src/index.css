@@ -4,10 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: rgba(32, 33, 36, 80%);
-}
-
 .profile-picture {
     user-drag: none;
     user-select: none;
