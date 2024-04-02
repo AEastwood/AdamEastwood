@@ -3,7 +3,7 @@ function Contact() {
         <div>
             <a
                 className="m-4 text-sm sm:text-base inline-flex text-left items-center space-x-6 bg-gray-800 rounded-lg p-4 px-8 pl-6"
-                href="mailto:adam-3@live.co.uk"
+                href="mailto:hello@ae.codes"
                 title="Email Me"
             >
                 <span className="flex gap-4 font-mono">
