@@ -1,4 +1,4 @@
-import me from "../assets/imgs/me.jpg";
+import me from "../../public/imgs/me.jpg";
 import {useState} from "react";
 
 function ProfilePicture() {
@@ -20,7 +20,6 @@ function ProfilePicture() {
                 console.log('Congratulations! Your ADAM turned into a BeyBlade!')
                 break;
         }
-
     }
 
     return (

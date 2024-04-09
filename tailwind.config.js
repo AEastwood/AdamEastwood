@@ -13,7 +13,7 @@ export default {
                 'google': '#202124'
             },
             fontFamily: {
-                sans: ['Mooli', 'sans-serif'],
+                sans: ['Recoleta', 'sans-serif'],
             },
         },
     },

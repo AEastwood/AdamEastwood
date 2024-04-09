@@ -1,44 +1,51 @@
-import Instagram from "./Socials/Instagram.jsx";
-import Twitter from "./Socials/Twitter.jsx";
-import Github from "./Socials/Github.jsx";
-import LinkedIn from "./Socials/LinkedIn.jsx";
+import {useState} from "react";
+import SocialIcon from "./SocialIcon.jsx";
 
 function Socials() {
 
+    const [socialIcons] = useState([
+        {
+            name: "GitHub",
+            icon: "/imgs/socials/github.svg",
+            url: "https://github.com/aeastwood"
+        },
+        {
+            name: "Instagram",
+            icon: "imgs/socials/instagram.svg",
+            url: "https://github.com/aeastwood"
+        },
+        {
+            name: "LinkedIn",
+            icon: "imgs/socials/linkedin.svg",
+            url: "https://github.com/aeastwood"
+        },
+        {
+            name: "X",
+            icon: "imgs/socials/x.svg",
+            url: "https://x.com/adeastwood"
+        },
+    ]);
+
     return (
         <div className="flex gap-8">
-            <a
-                href="https://instagram.com/aeasywood"
-                title="Instagram"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <Instagram/>
-            </a>
-            <a
-                href="https://twitter.com/ADEastwood"
-                title="Twitter"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <Twitter/>
-            </a>
-            <a
-                href="https://github.com/AEastwood"
-                title="GitHub"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <Github/>
-            </a>
-            <a
-                href="https://www.linkedin.com/in/adeastwood/"
-                title="LinkedIn"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <LinkedIn/>
-            </a>
+            {socialIcons.map((socialIcon) => {
+                return (
+                    <a
+                        className="w-8 h-8"
+                        key={socialIcon.name}
+                        href={socialIcon.url}
+                        title={socialIcon.name}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <SocialIcon
+                            name={socialIcon.name}
+                            icon={socialIcon.icon}
+                        />
+                    </a>
+                )
+            })}
+
         </div>
     )
 

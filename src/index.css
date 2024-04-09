@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: Recoleta;
+    src: url(assets/fonts/recoleta/Recoleta-Light.woff2);
+}
+
 .profile-picture {
     user-drag: none;
     user-select: none;
@@ -11,4 +16,13 @@
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+}
+
+.social-media-icon {
+    fill: white;
+}
+
+svg {
+    fill: currentColor;
+    color: white;
 }
