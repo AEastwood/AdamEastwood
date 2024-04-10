@@ -13,7 +13,7 @@ function App() {
             {/* My Name */}
             <span className="flex flex-col gap-3 tracking-wider mb-3">
                 <span
-                    className="text-6xl xl:text-5xl font-semibold antialiased"
+                    className="text-6xl xl:text-5xl font-semibold antialiased drop-shadow"
                 >
                     Adam Eastwood
                 </span>
