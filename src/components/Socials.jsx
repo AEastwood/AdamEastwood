@@ -12,12 +12,12 @@ function Socials() {
         {
             name: "Instagram",
             icon: "imgs/socials/instagram.svg",
-            url: "https://github.com/aeastwood"
+            url: "https://www.instagram.com/aeasywood/"
         },
         {
             name: "LinkedIn",
             icon: "imgs/socials/linkedin.svg",
-            url: "https://github.com/aeastwood"
+            url: "https://www.linkedin.com/in/adeastwood/"
         },
         {
             name: "X",
