@@ -5,7 +5,7 @@ function App() {
 
     return (
         <div
-            className="flex flex-col gap-6 h-screen bg-gradient-to-br bg-gradient-to-r from-indigo-500 to-blue-500 text-gray-100 justify-center items-center"
+            className="flex flex-col gap-6 h-screen bg-gradient-to-br bg-gradient-to-tr from-indigo-500 to-blue-500 text-gray-100 justify-center items-center"
         >
             {/* Profile Picture */}
             <ProfilePicture/>
