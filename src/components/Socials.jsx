@@ -10,19 +10,24 @@ function Socials() {
             url: "https://github.com/aeastwood"
         },
         {
-            name: "Instagram",
-            icon: "imgs/socials/instagram.svg",
-            url: "https://www.instagram.com/aeasywood/"
-        },
-        {
             name: "LinkedIn",
             icon: "imgs/socials/linkedin.svg",
             url: "https://www.linkedin.com/in/adeastwood/"
         },
         {
+            name: "Instagram",
+            icon: "imgs/socials/instagram.svg",
+            url: "https://www.instagram.com/aeasywood/"
+        },
+        {
             name: "X",
             icon: "imgs/socials/x.svg",
             url: "https://x.com/adeastwood"
+        },
+        {
+            name: "Email Me",
+            icon: "imgs/socials/mail.svg",
+            url: "mailto:hello@ae.codes"
         },
     ]);
 
