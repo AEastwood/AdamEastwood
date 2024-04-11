@@ -11,19 +11,19 @@ function App() {
             <ProfilePicture/>
 
             {/* My Name */}
-            <span className="flex flex-col gap-3 tracking-wider mb-3">
-                <span
+            <div className="flex flex-col gap-3 tracking-wider mb-3">
+                <div
                     className="text-6xl xl:text-5xl font-semibold antialiased drop-shadow"
                 >
                     Adam Eastwood
-                </span>
+                </div>
 
                 <div
                     className="text-lg text-center text-gray-150"
                 >
                     Code all the things.
                 </div>
-            </span>
+            </div>
 
             {/* Socials */}
             <Socials/>
