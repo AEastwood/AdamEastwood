@@ -4,6 +4,11 @@ import SocialIcon from "./SocialIcon.jsx";
 function Socials() {
 
     const [socialIcons] = useState([
+        // {
+        //     name: "ESG",
+        //     icon: "imgs/socials/esg.svg",
+        //     url: "https://esg.cx"
+        // },
         {
             name: "GitHub",
             icon: "/imgs/socials/github.svg",
