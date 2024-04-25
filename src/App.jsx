@@ -11,7 +11,7 @@ function App() {
             <ProfilePicture/>
 
             {/* My Name */}
-            <div className="flex flex-col gap-3 tracking-wider mb-3">
+            <div className="flex flex-col gap-3 tracking-wider mb-3 text-center">
                 <div
                     className="text-6xl xl:text-5xl font-semibold antialiased drop-shadow"
                 >
