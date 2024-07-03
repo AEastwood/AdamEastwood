@@ -1,50 +1,39 @@
+import ConfettiExplosion from 'react-confetti-explosion';
 import me from "../../public/imgs/me.jpg";
 import {useState} from "react";
 
 function ProfilePicture() {
-    const [clickCount, setClickCount] = useState(0);
-
+    const [isExploding, setIsExploding] = useState(false);
+    const secondsOfExplosion = 7 * 1000;
     const addClick = () => {
-        setClickCount(clickCount + 1);
-
-        switch(clickCount) {
-            case 0:
-                console.log('Seems you have clicked my picture... I wonder what will happen if you continue...')
-                break;
-
-            case 10:
-                console.log('What? ADAM is evolving!')
-                break;
-
-            case 19:
-                console.log('Congratulations! Your ADAM turned into a BeyBlade!')
-                break;
-        }
+        setIsExploding(true);
+        console.log('TADA 🎉🎉');
     }
 
     return (
-        <div>
-            {(clickCount > 19) ?
-                <>
-                    <img
-                        className="profile-picture rounded-md w-48 transition duration-200 hover:shadow-xl motion-safe:animate-spin"
-                        src={me}
-                        alt="Adam Eastwood"
+        <div className="relative">
+            <button className="mx-auto relative z-20" disabled={isExploding}>
+                <img
+                    className="profile-picture rounded-md w-48 hover:scale-[1.08] transition duration-250 hover:shadow-xl"
+                    src={me}
+                    alt="Adam Eastwood"
+                    onClick={addClick}
+                />
+            </button>
+            <div className="w-full inherit pb-[50%] ml-[50%] absolute top-0 left-0 z-10">
+                {isExploding && (
+                    <ConfettiExplosion
+                        duration={secondsOfExplosion}
+                        height="110vh"
+                        width="1500"
+                        force={0.65}
+                        particleSize={10}
+                        onComplete={() => setIsExploding(false)}
                     />
-                </>
-                :
-                <>
-                    <button className="relative">
-                        <img
-                            className="profile-picture rounded-md w-48 hover:scale-[1.08] transition duration-200 hover:shadow-xl"
-                            src={me}
-                            alt="Adam Eastwood"
-                            onClick={addClick}
-                        />
-                    </button>
-                </>
-            }
+                )}
+            </div>
         </div>
+
     )
 }
 
