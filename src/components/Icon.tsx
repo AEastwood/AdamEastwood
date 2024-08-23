@@ -1,4 +1,4 @@
-function SocialIcon(props) {
+function Icon(props) {
     return (
         <img
             className="hover:scale-[1.3] transition rounded"
@@ -8,4 +8,4 @@ function SocialIcon(props) {
     )
 }
 
-export default SocialIcon;
+export default Icon;

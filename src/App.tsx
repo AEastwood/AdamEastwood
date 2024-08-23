@@ -1,5 +1,6 @@
-import Socials from "./components/Socials.jsx";
-import ProfilePicture from "./components/ProfilePicture.jsx";
+import socialsData from "./data/socials.json";
+import Socials from "./components/Socials";
+import ProfilePicture from "./components/ProfilePicture";
 
 function App() {
 
@@ -12,21 +13,17 @@ function App() {
 
             {/* My Name */}
             <div className="flex flex-col gap-3 tracking-wider mb-3 text-center">
-                <div
-                    className="text-6xl xl:text-5xl font-semibold antialiased drop-shadow"
-                >
+                <div className="text-6xl xl:text-5xl font-semibold antialiased drop-shadow">
                     Adam Eastwood
                 </div>
 
-                <div
-                    className="text-lg text-center text-gray-150"
-                >
+                <div className="text-lg text-center text-gray-150">
                     Code all the things.
                 </div>
             </div>
 
             {/* Socials */}
-            <Socials/>
+            <Socials data={socialsData}/>
         </div>
     )
 }
