@@ -1,5 +1,5 @@
 import ConfettiExplosion from 'react-confetti-explosion';
-import me from "../../public/imgs/me.jpg";
+import me from "/imgs/me.jpg";
 import {useState} from "react";
 
 export default function ProfilePicture() {
