@@ -1,24 +1,24 @@
 import {useState} from "react";
 import Icon from "./Icon.tsx";
-
-interface SocialButtonProps {
-    socialIcon: {
-        name: string;
-        url: string;
-        icon: string;
-    };
-}
+import {SocialButtonProps} from "../types/SocialButton";
 
 export default function Button({socialIcon}: SocialButtonProps) {
     const [hoverTimeout, setHoverTimeout] = useState<number | null>(null);
 
+    // Load easter eggs
     const handleMouseEnter = () => {
-        if (socialIcon.name !== 'LinkedIn') return;
+        switch (socialIcon.name) {
+            case 'LinkedIn':
+                const timeout: number = setTimeout((): void => {
+                    window.location.href = socialIcon.url;
+                }, 2500);
+                setHoverTimeout(timeout);
+                break;
 
-        const timeout = setTimeout(() => {
-            window.location.href = socialIcon.url;
-        }, 2500);
-        setHoverTimeout(timeout);
+            default:
+                return;
+        }
+
     };
 
     const handleMouseLeave = () => {

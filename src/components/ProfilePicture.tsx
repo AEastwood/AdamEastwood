@@ -5,6 +5,7 @@ import {useState} from "react";
 export default function ProfilePicture() {
     const [isExploding, setIsExploding] = useState<boolean>(false);
     const secondsOfExplosion = 7 * 1000;
+
     const handleClick = () => {
         setIsExploding(true);
         console.log('TADA 🎉🎉');
