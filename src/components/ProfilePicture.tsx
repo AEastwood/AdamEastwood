@@ -1,5 +1,4 @@
 import ConfettiExplosion from 'react-confetti-explosion';
-import me from "/imgs/me.jpg";
 import {useState} from "react";
 
 export default function ProfilePicture() {
@@ -16,7 +15,7 @@ export default function ProfilePicture() {
             <button className="mx-auto relative z-20" disabled={isExploding}>
                 <img
                     className="profile-picture rounded-md w-48 hover:scale-[1.08] transition duration-250 hover:shadow-xl"
-                    src={me}
+                    src={`https://cdn.esg.sh/ae-codes/me.jpg`}
                     alt="Adam Eastwood"
                     onClick={handleClick}
                 />
